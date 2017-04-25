@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap01-肉球新聞/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <style>
+        ._title {
+            background: url(https://i2.bahamut.com.tw/index/top_bg.jpg) no-repeat;
+            background-size: 100% 107px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #cccccc;
+            min-width: 1250px;
+        }
+
+        .top1 {
+            text-align: center;
+        }
+
+        img#top0 {
+            width: 30px;
+            height: 30px;
+        }
+
+        .box {
+            width: 180px;
+            height: 429px;
+            margin: 30px;
+            border: #999 1px solid;
+        }
+
+        .BA-ltitle {
+            display: block;
+            background: #7CAEBA;
+            height: 27px;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+            line-height: 27px;
+        }
+
+        .main-menu {
+            padding: 10px 0px 0px 35px;
+            width: initial;
+        }
+
+        .main-menu #A2 img {
+            width: inherit;
+        }
+
+        .IMG-08 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1244px;
+        }
+
+        .IMG-02 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1140px;
+        }
+
+        .IMG-25 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0px -1426px;
+        }
+
+        .IMG-07 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1218px;
+        }
+
+        .IMG-27 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1530px;
+        }
+
+        .IMG-05 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1192px;
+        }
+
+        .IMG-04 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1167px;
+        }
+
+        .IMG-26 {
+            display: inline-block;
+            width: 20px;
+            height: 14px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1506px;
+        }
+
+        .IMG-11 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1271px;
+        }
+
+        .IMG-12 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1296px;
+        }
+
+        .IMG-22 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0px -1375px;
+        }
+
+        .IMG-21 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1349px;
+        }
+
+        .IMG-13 {
+            display: inline-block;
+            width: 21px;
+            height: 22px;
+            background-image: url(https://i2.bahamut.com.tw/index/bahaicons.png);
+            background-position: 0 -1323px;
+        }
+
+        #A1 {
+            padding: 10px 0px 0px 0px;
+            width: 275px;
+        }
+
+        #A2 a {
+            padding: 10px 0px 0px 17px;
+        }
+
+        .BA-ctag1 {
+            padding: 10px 0px 0px 0px;
+            margin-bottom: -1px;
+            overflow: auto;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 10px 0px 0px 0px;
+        }
+
+        .main-content img {
+            display: block;
+            margin: auto;
+            padding: 10px 0px 0px 0px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .BA-cbox3 {
+            padding: 10px 10px 5px 10px;
+        }
+
+        .BA-cbox3 img {
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .BA-cbox3 span {
+            display: inline-block;
+            width: 46px;
+            margin-right: 5px;
+            line-height: 18px;
+            text-align: center;
+            background-color: #e6f1f6;
+            color: #446ba2;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-text-size-adjust: none;
+            font-size: 13px;
+        }
+
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid _title">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <img width="156" height="107" class="BA-logo" src="https://i2.bahamut.com.tw/baha_logo5.png" border="0">
+
+                </div>
+
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <br>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <div>
+                        <p>
+                            <ul class="list-inline pull-right">
+
+                                <li><img id="top0" src="https://i2.bahamut.com.tw/none.gif"></li>
+                                <li><a href="#">我要登入</a> |</li>
+                                <li><a href="#">註冊</a> |</li>
+                                <li><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></li>
+                            </ul>
+                    </p>
+                    <from class="form-inline pull-right">
+                        <br>
+                        <a href="#">Android</a> |
+                        <a href="#">iOS</a> |
+                        <a href="#">線上遊戲</a> |
+                        <a href="#">PC單機</a> |
+                        <a href="#">WEB</a> |
+                        <a href="#">PS4</a> |
+                        <a href="#">PS3</a> |
+                        <a href="#">XBOne</a> |
+                        <a href="#">NS</a> |
+                        <a href="#">3DS</a> |
+                        <a href="#">PSV</a> |
+                        <a href="#">動畫</a> |
+                        <a href="#">漫畫</a> |
+                        <a href="#">輕小說</a> |
+                    </from>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid top1">
+        <img src="https://p2.bahamut.com.tw/S/2KU/96/0001524096.JPG" alt="">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="list-group main-menu">
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-08"><a> GNN新聞</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-02"><a> 哈啦區</button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-25"><a> ＡＰＰ</button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-07"><a> 電玩瘋</button>
+                    <button type="button" class="list-group-item"><a href="//ani.gamer.com.tw/" title="動畫瘋" class="gtm-indexservice"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-27"><a> <span style="color: #fff;background: #58BEC9;margin-right: 1px;padding-left: 2px;vertical-align: middle;">動</span><span style="color: #fff;background: #EB9D3D;margin-right: 1px;padding-left: 1px;">畫</span><span style="color: #fff;background: #E57B94;padding-left: 2px;vertical-align: middle;">瘋</span></a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-05"><a> 公會大廳</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-04"><a> 創作大廳</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-26"><a> 實況大廳</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-11"><a> 勇者造型</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-12"><a> 巴哈商城</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-22"><a> 勇者福利社</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-21"><a> ACG創作大賽</a></button>
+                    <button type="button" class="list-group-item"><img src="https://i2.bahamut.com.tw/spacer.gif" class="IMG-13"><a> 會員中心</a></button>
+                    <h5 class="BA-ltitle">動畫瘋新番</h5>
+                    <div class="list-group" id="A2">
+                        <button type="button" class="list-group-item"> <img src="https://p2.bahamut.com.tw/S/2KU/18/0001525318.PNG"><a href="#">MARGINAL#4</a><a href="#"><div>第十一集 今日更新</div></a></button>
+                    </div>
+                    <div class="list-group">
+                        <button type="button" class="list-group-item"><a href="#">混沌之子</a></button>
+                        <button type="button" class="list-group-item"><a href="#">雙星之陰陽師</a></button>
+                        <button type="button" class="list-group-item"><a href="#">ACCA13 區監察課</a></button>
+                        <button type="button" class="list-group-item"><a href="#">黑白來看守所</a></button>
+                        <button type="button" class="list-group-item"><a href="#">Hand Shakers</a></button>
+                        <button type="button" class="list-group-item"><a href="#">進擊的巨人 第二季</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <ul class="BA-ctag1 list-inline">
+                    <button><li><a href="#"> GNN新聞 </a></li></button>
+                    <button><li><a href="#">手機遊戲</a></li></button>
+                    <button><li><a href="#">PC</a></li></button>
+                    <button><li><a href="#">TV掌機</a></li></button>
+                    <button><li><a href="#">動漫畫</a></li></button>
+                    <button><li><a href="#">電玩瘋</a></li></button>
+                    <button><li><a href="#">電競</a></li></button>
+                    <button><li><a href="#">活動展覽</a></li></button>
+                    <button><li><a href="#">專題報導</a></li></button>
+                </ul>
+
+                <div class="container-fluid main-content">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>手機</span>
+                            <img src="http://p2.bahamut.com.tw/S/2KU/66/0001525366.JPG">
+                            <a href="#">《Pokemon GO》玩家陸續回報發現「色違」鯉魚王與暴鯉龍</a>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>OLG</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/54/0001525254.JPG">
+                            <a href="#">《TERA》搶先揭露新職業「月光武士」情報與宣傳影片 用同胞的血鍛造出月光刀</a>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>NS</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/53/0001525253.PNG">
+                            <a href="#">北美任天堂客服回應 Nintendo Switch 左手 Joy-Con 感應不良問題 提供免費送修</a>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>OLG</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/26/0001525426.JPG">
+                            <a href="#">《魔獸世界：軍臨天下》7.2 版本「薩格拉斯之墓」30 日上線 釋出開場宣傳影片</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid main-content">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>多平台</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/23/0001525023.JPG">
+                            <a href="#">《狙擊之王：幽靈戰士 3》宣布完成研發 4 月 25 日問世</a>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>OLG</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/09/0001525109.JPG">
+                            <a href="#">《黑色沙漠》第十位新職業「梅花」正式現身 預告佔領戰正規賽 25 日開打</a>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>其他</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/20/0001524920.JPG">
+                            <a href="#">《攻殼機動隊》真人版電影釋出影片 搶先一覽草薙素子攻堅大樓橋段</a>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <span>OLG</span>
+                            <img src="https://p2.bahamut.com.tw/S/2KU/96/0001524996.JPG">
+                            <a href="#">Blizzard 宣布《鬥陣特攻》太平洋聯賽第一賽季 4 月開戰 ahq、FW 閃電狼、M17 參戰</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="gnn_normal" class="BA-cbox BA-cbox3">
+                    <p><span>手機</span><a href="#">巴哈姆特 GNN 2016 年度十大手機新聞回顧</a><img src="https://i2.bahamut.com.tw/gnn/movie.gif">
+                        <img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>動漫畫</span><a href="#">《機動戰艦》20 週年專題 在空白的三年間尋求真相 對傳統科幻機器人的致敬</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>其他</span><a href="#">巴哈姆特 20 週年站聚全紀錄 凝聚 ACG 同好熱情跨越一世代的奇幻旅程</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>其他</span><a href="#">巴哈姆特 20 週年企劃之巴哈總部團隊揭密！認識幕後支持巴哈姆特營運的眾多推手</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>其他</span><a href="#">《櫻花大戰》專題報導 回顧系列的不凡魅力 再度置身於太正年間的浪漫風暴</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>多平台</span><a href="#">【BZ 16】盤點 BlizzCon 2016 十大焦點 創辦人回歸與展示當年《魔獸》《暗黑》設計風貌</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>其他</span><a href="#">巴哈姆特 20 週年企劃之裏數據大蒐秘！一窺你所不知道的巴哈姆特大數據真相</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>動漫畫</span><a href="#">「2016 巴哈姆特 ACG 創作大賽」動畫組優勝專訪 傳達對歷史文化、生活議題的想法</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>手機</span><a href="#">「2016 巴哈姆特 ACG 創作大賽」遊戲組優勝專訪 新人老手以創意發想挑戰自製遊戲領域</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>動漫畫</span><a href="#">「2016 巴哈姆特 ACG 創作大賽」漫畫組優勝專訪 用畫筆描繪出未來藍圖</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <p><span>OLG</span><a href="#">《魔獸世界》巴哈大調查揭露最受歡迎角色等結果 副總裁 J. Allen Brack 談最難副本等</a>
+                        <img src="https://i2.bahamut.com.tw/gnn/movie.gif"><img src="https://i2.bahamut.com.tw/gnn/hot.gif"></p>
+                    <hr>
+                    <div class="pull-right"><a href="#" target="_blank"> &gt; 投稿 </a><a href="#"> &gt; 更多專題報導 </a></div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img id="A1" border="0" src="https://p2.bahamut.com.tw/S/2KU/12/0001463212.JPG">
+                <img id="A1" border="0" src="https://p2.bahamut.com.tw/S/2KU/17/0001463217.JPG">
+                <img id="A1" border="0" src="https://p2.bahamut.com.tw/S/2KU/67/0001524367.JPG">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
